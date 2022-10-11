@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-// import './App.css';
+import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
-// import Resume from './components/Resume';
+import Resume from './components/Resume';
 
 function App() {
 
   const [aboutSelected,setAboutSelected] = useState(true)
   const [portfolioSelected,setPortfolioSelected] = useState(false)
   const [contactSelected,setContactSelected] = useState(false)
+  const [resumeSelected,setResumeSelected] = useState(false)
 
   return (
     <div>
@@ -21,6 +22,8 @@ function App() {
         setPortfolioSelected={setPortfolioSelected}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        resumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}
       >
       </Nav>
       <main>
@@ -38,6 +41,12 @@ function App() {
         )}
         {contactSelected ? (
           <ContactForm></ContactForm>
+        ):(
+          <>
+          </>
+        )}
+        {resumeSelected ? (
+          <Resume></Resume>
         ):(
           <>
           </>
