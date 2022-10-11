@@ -1,36 +1,39 @@
 import React , {useState} from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
+
+import { FaGithubSquare, FaAppStore } from 'react-icons/fa'
 
 function Portfolio() {
     const projects = useState([
         { 
             name: "PetHub", 
-            deployed:"",
-            repository:"" 
+            deployed:"https://pets-projects.herokuapp.com/",
+            repository:"https://github.com/Beca-d/Project2" 
         },
         { 
             name: "MusicBox", 
-            deployed:"",
-            repository: "" 
+            deployed:"https://beca-d.github.io/music-box/",
+            repository: "https://github.com/Beca-d/music-box" 
         },
         { 
-            name: "", 
-            deployed:"",
-            repository: "" 
+            name: "JATE Text Editor", 
+            deployed:"https://beca-d-jate.herokuapp.com/",
+            repository: "https://github.com/Beca-d/Text-Editor" 
         },
         { 
-            name: "", 
-            deployed:"",
-            repository: "" 
+            name: "Note Taker", 
+            deployed:"https://warm-river-97499.herokuapp.com/",
+            repository: "https://github.com/Beca-d/Note-taker" 
         },
         { 
-            name: "", 
-            deployed:"",
-            repository: "" 
+            name: "Daily Planner", 
+            deployed:"https://beca-d.github.io/Daily-Planner/",
+            repository: "https://github.com/Beca-d/Daily-Planner" 
         },
         { 
-            name: "", 
-            deployed:"",
-            repository: "" 
+            name: "JavaScript Quiz", 
+            deployed:"https://beca-d.github.io/JavaScript-Quiz/",
+            repository: "https://github.com/Beca-d/JavaScript-Quiz" 
         },
     ]);
     return (
@@ -39,16 +42,40 @@ function Portfolio() {
             <div id="container-of-work" className='flex-row'>
                 {projects.map((image) => (
                     <div>
-                    </div>
-                ))}
-                <div className="my-2">
-                <p> 
-                    I am a proven GIS analyst with 7+ years experience working with ArcGIS software and spatial databases including 2.5 years of professional experience. I have recently decided to upgrade my skills and complete a coding bootcamp at UFT in order to become a Full Stack Developer. I hope to utilize both my skills in GIS, data analysis, and my newly fostered development skills to grow my career in the tech industry. I am keen on learning new things and constantly growing my knowledge base. I have established ability in database management, data analysis, and project management. I am demonstrated in working with a team and leading various projects including workflow automation with FME and providing custom data products to stakeholders. I look forward to developing new applications and building more complex web maping applications with my new skills. 
-                </p>
-            </div>
-        </div>
-    </section>
+                        <div className='flex-row space-between '>
+                            <h2 className="mx-2">{capitalizeFirstLetter(image.name)}</h2>
+                            <h2 className="mx-2">
+                                <a href={image.repo} 
+                                    rel="noreferrer" 
+                                    target="_blank" 
+                                    alt="Github logo"
+                                >
 
+                                    <FaGithubSquare/>
+                                </a>
+                            </h2>
+                            <h2 className="mx-2">
+                                <a href={image.deployedLink} 
+                                    rel="noreferrer" 
+                                    target="_blank" 
+                                    alt="App logo" 
+                                >
+                                <FaAppStore/>
+                                </a>
+                            </h2>
+                </div>
+                <img
+                    src={require(`../../assets/Portfolio/${image.name}.jpg`).default}
+                    alt={image.name}
+                    className='img-thumbnail mx-1'
+                    key={image.name}
+                />
+            </div>
+                ))}
+            </div>
+            
+        </section>
+    );
 }
 
 export default Portfolio; 
