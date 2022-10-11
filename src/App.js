@@ -1,27 +1,38 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+// import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-
-// import './App.css';
+// import Contact from './components/Contact';
+// import Resume from './components/Resume';
 
 function App() {
 
   const [aboutSelected,setAboutSelected] = useState(true)
   const [portfolioSelected,setPortfolioSelected] = useState(false)
-  const [contactSelected, setContactSelected] = useState(false);
-  const [resumeSelected,setResumeSelected] = useState(false)
 
   return (
     <div>
-      <Nav></Nav>
+      <Nav
+        aboutSelected={aboutSelected}
+        setAboutSelected={setAboutSelected}
+        portfolioSelected={portfolioSelected}
+        setPortfolioSelected={setPortfolioSelected}
+      >
+      </Nav>
       <main>
-        <About></About>
+        {aboutSelected ? (
+          <About></About>
+        ):(
+          <>
+          </>
+        )}
+        {portfolioSelected ? (
         <Portfolio></Portfolio>
-        <Contact></Contact>
-        <Resume></Resume>
+        ):(
+          <>
+          </>
+        )}
       </main>
     </div>
   );
