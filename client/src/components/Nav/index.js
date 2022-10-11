@@ -2,6 +2,14 @@ import React from 'react';
 import logo from '../../assets/logo.svg';
 
 function Nav() {
+    const categories = [
+        { name: "Portfolio", description:"Portfolio of my work" },
+        { name: "Contact", description: "Contact information" },
+        { name: "Resume", description: "Resume of qualifications" },
+    ];
+    function categorySelected(name) {
+        console.log(`${name} clicked`)
+      }
     return (
         <header>
             <h2>
@@ -16,9 +24,16 @@ function Nav() {
                         About me
                         </a>
                     </li>
-                    <li>
-                        <span>Contact</span>
-                    </li>
+                    {categories.map((category) => (
+                        <li
+                            className="mx-1"
+                            key={category.name}
+                        >
+                            <span onClick={categorySelected(category.name)}>
+                                {category.name}
+                            </span>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
