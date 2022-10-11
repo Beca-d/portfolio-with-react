@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import ContactForm from './components/Contact';
 // import Resume from './components/Resume';
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
           </>
         )}
         {contactSelected ? (
-          <Contact></Contact>
+          <ContactForm></ContactForm>
         ):(
           <>
           </>
