@@ -60,11 +60,11 @@ function Portfolio() {
           </div>
   
           <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-            {projects.map(({ id, name, deployed, repository }) => (
-              <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
+            {projects.map((project) => (
+              <div key={project.id} className='shadow-md shadow-gray-600 rounded-lg'>
                 <img
-                  src={name}
-                  alt=''
+                  src={project.name}
+                  alt={project.name}
                   className='rounded-md duration-200 hover:scale-105'
                   width="300px" 
                   height="300px"
@@ -74,12 +74,12 @@ function Portfolio() {
                     className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'
                     href='{}'
                   >
-                    <a href={deployed} target='_blank' rel='noreferrer'>
+                    <a href={project.deployed} target='_blank' rel='noreferrer'>
                       App
                     </a>
                   </button>
                   <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
-                    <a href={repository} target='_blank' rel='noreferrer'>
+                    <a href={project.repository} target='_blank' rel='noreferrer'>
                       Repo
                     </a>
                   </button>

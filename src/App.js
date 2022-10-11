@@ -3,13 +3,14 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 // import Resume from './components/Resume';
 
 function App() {
 
   const [aboutSelected,setAboutSelected] = useState(true)
   const [portfolioSelected,setPortfolioSelected] = useState(false)
+  const [contactSelected,setContactSelected] = useState(false)
 
   return (
     <div>
@@ -18,6 +19,8 @@ function App() {
         setAboutSelected={setAboutSelected}
         portfolioSelected={portfolioSelected}
         setPortfolioSelected={setPortfolioSelected}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       >
       </Nav>
       <main>
@@ -28,7 +31,13 @@ function App() {
           </>
         )}
         {portfolioSelected ? (
-        <Portfolio></Portfolio>
+          <Portfolio></Portfolio>
+        ):(
+          <>
+          </>
+        )}
+        {contactSelected ? (
+          <Contact></Contact>
         ):(
           <>
           </>
