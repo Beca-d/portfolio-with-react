@@ -3,13 +3,14 @@
 
 ## Description
 
-This repository contains a portfolio of my work and qualifications. Click the link [here]() to learn more about me, reach out, or view my resume!
+This repository contains a portfolio of my work and qualifications. Click the link [here](https://Beca-d.github.io/portfolio-with-react) to learn more about me, reach out, or view my resume!
 
 ## Table of Contents:
 1. [Description](#description) 
 2. [Technologies](#technologies)
-3. [License](#license)
-4. [Questions?](#questions)
+3. [Screenshot](#screenshot)
+4. [License](#license)
+5. [Questions](#questions)
 
 ## Technologies
 - JavaScript
@@ -17,6 +18,13 @@ This repository contains a portfolio of my work and qualifications. Click the li
 - CSS
 - Node
 - REACT
+
+## Screenshot
+
+![portfolio](https://user-images.githubusercontent.com/67708213/195224662-fd89a327-51cf-49d6-9c72-c03b6bbe6663.JPG)
+---
+![portresume](https://user-images.githubusercontent.com/67708213/195224671-638e12b5-a245-4af7-98cb-eb57b594af5d.JPG)
+---
 
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
