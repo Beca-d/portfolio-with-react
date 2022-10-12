@@ -5,7 +5,7 @@ function Resume() {
         <section className="ju resume">
             <div className="my-5">
                 <h1>
-                    <b>Preofessional Resume: </b>
+                    <b>Professional Resume: </b>
                 </h1>
                 <h3>
                     <a  href="https://drive.google.com/uc?export=download&id=1cHcMpwTtkpsBsp0S3sqkizWT4z9GncRk" 
@@ -18,9 +18,9 @@ function Resume() {
                 </h3>
             </div>
             <div>
-                <h2>
+                <h3>
                     <b>Front End Skills </b>
-                </h2>
+                </h3>
                 <h5>
                     HTML & CSS
                 </h5>
@@ -33,9 +33,9 @@ function Resume() {
                 <h5>
                     Git 
                 </h5>
-                <h2>
+                <h3>
                     <b>Back End Skills</b> 
-                </h2>
+                </h3>
                 <h5>
                     Node.js
                 </h5>

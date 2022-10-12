@@ -17,9 +17,8 @@ function Nav(props) {
             <h2>
                 <a data-testid="link" href="/">
                     <span role="img">
-                        <img src={logo} className="App-logo" alt="logo" width="175px" height="75px"/>
+                        <img src={logo} className="App-logo" alt="logo" width="350px" height="175px"/>
                     </span> 
-                    Rebeca Smith
                 </a>
             </h2>
             <nav className="nav">
