@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio-with-react/static/css/main.913e7c95.css",
+    "main.js": "/portfolio-with-react/static/js/main.6d8e02dc.js",
+    "static/js/787.51ee14cf.chunk.js": "/portfolio-with-react/static/js/787.51ee14cf.chunk.js",
+    "static/media/logo.svg": "/portfolio-with-react/static/media/logo.4b4adad522eb9d53c22ab6ed360f9da9.svg",
+    "static/media/profile.jpg": "/portfolio-with-react/static/media/profile.639bc4358a9ecbefcd7e.jpg",
+    "static/media/musicBox.JPG": "/portfolio-with-react/static/media/musicBox.7435412bd02338df5269.JPG",
+    "static/media/dailyPlanner.JPG": "/portfolio-with-react/static/media/dailyPlanner.208b25a7fa1793749fc7.JPG",
+    "static/media/javaScriptQuiz.JPG": "/portfolio-with-react/static/media/javaScriptQuiz.3e841b1252941460a138.JPG",
+    "static/media/petHub.JPG": "/portfolio-with-react/static/media/petHub.9d4b60c729f7931c4e94.JPG",
+    "static/media/noteTaker.JPG": "/portfolio-with-react/static/media/noteTaker.b141281a448ed7b7d7ef.JPG",
+    "static/media/jateTextEditor.JPG": "/portfolio-with-react/static/media/jateTextEditor.c54c0717f0f2179131fa.JPG",
+    "index.html": "/portfolio-with-react/index.html",
+    "main.913e7c95.css.map": "/portfolio-with-react/static/css/main.913e7c95.css.map",
+    "main.6d8e02dc.js.map": "/portfolio-with-react/static/js/main.6d8e02dc.js.map",
+    "787.51ee14cf.chunk.js.map": "/portfolio-with-react/static/js/787.51ee14cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.913e7c95.css",
+    "static/js/main.6d8e02dc.js"
+  ]
+}
