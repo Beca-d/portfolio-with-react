@@ -5,6 +5,7 @@ import javaScriptQuiz from '../../assets/Portfolio/javaScriptQuiz.JPG';
 import musicBox from '../../assets/Portfolio/musicBox.JPG';
 import petHub from '../../assets/Portfolio/petHub.JPG';
 import noteTaker from '../../assets/Portfolio/noteTaker.JPG';
+import makeADeal from '../../assets/Portfolio/noteTaker.JPG';
 
 
 function Portfolio() {
@@ -50,6 +51,13 @@ function Portfolio() {
             name: javaScriptQuiz, 
             deployed:"https://beca-d.github.io/JavaScript-Quiz/",
             repository: "https://github.com/Beca-d/JavaScript-Quiz" 
+        },
+        { 
+            id: 7,
+            title: "Make A Deal",
+            name: makeADeal, 
+            deployed:"hhttps://make-a-deal2.herokuapp.com/",
+            repository: "https://github.com/Beca-d/Make-A-Deal" 
         }
     ];
 
